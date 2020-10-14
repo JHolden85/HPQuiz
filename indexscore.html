@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Links to API, CSS, JS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="score.js"> </script>
     <link rel="stylesheet" href="style.css">
+    <!-- Title of website -->
     <title>High Scores</title>
 
 </head>
@@ -14,19 +17,26 @@
         <div class="col-lg-12 body">   
               <div class="grid">
                       <div id="quiz">
+                        <!-- Instructs user to record their score -->
                           <h1>Record Your High Score</h1>
                           <hr style="margin-bottom: 20px">
                           <p id="question"></p>
                               </div>
 
                               <form>
+                                <!-- Ask User for their name -->
                                 Username:<br>
-                                <input  type="text" name="username" value="Johnny Apple Seed"><br>
+                                <input  type="text" name="username" value="Harry Potter"><br>
+                                <!-- Show user their score and allows them to subit their score to be saved -->
                                 <input id="submit-score" type="submit" value="Submit Score">
                               </form>
+                              <!-- OL of previous high scores -->
+                              <ol class= "highscores">
+                              </ol>
                
                           <hr style="margin-top: 30px">
                           <footer>
+                            <!-- Gives user the ability to take quiz again and returns them to index.html -->
                               <p id="progress">Retake Quiz</p>
                               <a href="index.html" class="btn btn-info" role="button">Give It Another Try</a>
                           </footer>
@@ -36,9 +46,6 @@
         </div>
       </div>
    
-   
-     
-    <script src="score.js"> </script>
 
 <!-- get score from local storage and add in script tab -->
    
